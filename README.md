@@ -2,7 +2,7 @@
 
 ## 1. 简述
 
-numsg-odata-service是基于olingo-4相关API(版本是4.4.0)及spring对OData4（[OData4详见](./docs/OData Version 4.0.pdf)）的实现。
+numsg-odata-service是基于olingo-4相关API(版本是4.4.0)及spring对OData4（[OData4详见](https://github.com/numsg/numsg-odata/blob/master/docs/OData%20Version%204.0.pdf)）的实现。
 
 ## 2. numsg-odata-service调整点
 
