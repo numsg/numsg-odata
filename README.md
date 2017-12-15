@@ -124,7 +124,7 @@ http://localhost:8080/OdataService.svc/Peoples?$filter=gender eq 'MAIL'&$top=2
 
 ### 3.1 与spring-boot集成
 
-这里主要描述的是numsg-odata-service与spring-boot工程 [odata-springboot](https://github.com/numsg/numsg-odata/samples/odata-springboot)集成
+这里主要描述的是numsg-odata-service与spring-boot工程 [odata-springboot](https://github.com/numsg/numsg-odata/tree/master/samples/odata-springboot)集成
 
 1. 在spring-boot种子工程API子工程及service子工程中添加numsg-odata-service服务jar包引用
 ```java
@@ -170,9 +170,9 @@ public class OlingoApplication {
 
 ## 4. numsg-odata-service支持
 
-[numsg-odata-service与spring-boot集成Sample](https://github.com/numsg/numsg-odata/samples/odata-springboot)
+[numsg-odata-service与spring-boot集成Sample](https://github.com/numsg/numsg-odata/tree/master/samples/odata-springboot)
 
-[numsg-odata-service客户端Sample](https://github.com/numsg/numsg-odata/samples/odata-web-client)
+[numsg-odata-service客户端Sample](https://github.com/numsg/numsg-odata/)
 
 `numsg-odata-service支持:`
 
