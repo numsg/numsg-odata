@@ -1,0 +1,35 @@
+group 'com.sg'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin:"war"
+
+
+//apply plugin: 'org.springframework.boot'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    maven {
+        url 'http://172.18.24.51:8081/nexus/content/groups/public/'
+    }
+}
+
+dependencies {
+    compile project(":sg-entity")
+    compile project(":sg-odata-service")
+
+    compile(
+            'org.springframework.boot:spring-boot-starter-web',
+            'org.springframework.boot:spring-boot-starter-data-jpa'
+    )
+}
+
+//bootRun {
+//    jvmArgs = ['-Xdebug', '-Xrunjdwp:server=y,transport=dt_socket,address=8000,suspend=n','-Dspring.profiles.active=dev']
+//}
+
+//run {
+//    jvmArgs = ['-Xdebug', '-Xrunjdwp:server=y,transport=dt_socket,address=4000,suspend=n','-Dspring.profiles.active=dev']
+//}

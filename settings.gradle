@@ -1,0 +1,3 @@
+rootProject.name = 'guppy-odata'
+include 'numsg-odata-service'
+

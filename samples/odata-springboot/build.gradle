@@ -1,0 +1,51 @@
+group 'com.sg'
+version '1.0-SNAPSHOT'
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.5.1.RELEASE")
+    }
+}
+
+subprojects {
+    repositories {
+        mavenCentral()
+    }
+
+    apply plugin: 'java'
+    apply plugin: 'eclipse'
+//    apply plugin: 'org.springframework.boot'
+
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8
+
+    dependencies {
+
+        compile(
+//                "org.apache.olingo:odata-server-core:4.4.0",
+//                "org.apache.olingo:odata-server-api:4.4.0",
+//                "org.apache.olingo:odata-commons-core:4.4.0",
+//                "org.apache.olingo:odata-commons-api:4.4.0",
+                'org.springframework.boot:spring-boot-starter-web:1.5.1.RELEASE',
+                'org.springframework.boot:spring-boot-starter-data-jpa:1.5.1.RELEASE'
+        )
+        compile(
+                "com.fasterxml.jackson.core:jackson-core:2.7.5",
+                "com.fasterxml.jackson.core:jackson-databind:2.7.5"
+        )
+
+        compile "commons-codec:commons-codec:1.9"
+        compile "javax.servlet:jstl:1.2"
+        compile "javax.servlet:javax.servlet-api:3.1.0"
+        compile "javax.el:javax.el-api:3.0.0"
+
+        /*
+         * java.lang.NoClassDefFoundError: org/hibernate/tool/schema/spi/DelayedDropRegistry 添加hibernate-core包解决
+         */
+
+        compile("org.postgresql:postgresql:9.4.1208")
+    }
+}

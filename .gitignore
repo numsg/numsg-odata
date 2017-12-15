@@ -1,0 +1,41 @@
+# Maven
+target/
+
+# Gradle
+.gradle/
+build/
+
+# Ant Working Directory
+.sonar/
+
+
+# business Directory
+numsg-odata-service/
+
+# IntelliJ IDEA
+*.iws
+*.iml
+*.ipr
+.idea/
+classes/
+out/
+
+# Eclipse
+.classpath
+.project
+.settings
+
+# ---- Mac OS X
+.DS_Store
+Icon?
+# Thumbnails
+._*
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+# ---- Windows
+# Windows image file caches
+Thumbs.db
+# Folder config file
+Desktop.ini

@@ -1,0 +1,5 @@
+rootProject.name = 'sg-odata'
+include 'sg-odata-service'
+include 'sg-web'
+include 'sg-entity'
+

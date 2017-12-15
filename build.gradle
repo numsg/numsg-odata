@@ -1,0 +1,10 @@
+group 'com.numsg.odata'
+version '1.0.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+}
