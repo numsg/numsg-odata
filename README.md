@@ -205,7 +205,7 @@ public class OlingoApplication {
    
    http://localhost:8080/OdataService.svc/Cars?$filter=Id eq 2  //int
    
-   http://localhost:8080/OdataService.svc/Cars?$filter=CreateTime gt '2016-12-05 12:30:12'  // Date  但目前只支持postgresql
+   http://localhost:8080/OdataService.svc/Cars?$filter=CreateTime gt '2016-12-05 12:30:12'
    
    http://localhost:8080/OdataService.svc/Cars?$top=1&$skip=1&$orderby=Id desc,Model asc&$count=true  //分页查询
    
