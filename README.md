@@ -26,7 +26,7 @@ numsg-odata-service针对sg-odata([sg-odata是什么?](https://github.com/numsg/
 1. numsg-odata-service包装ODdata的服务会将整个数据库暴露出来，但在使用OData开发外部接口时，我们希望有些表及表中字段不在接口里面暴露给调用方，此时我们可以使用numsg-odata-service新特性，使用方法如下，
     1. 将Entity相关工程依赖numsg-odata-service
     ```
-    compile  'com.gsafety.odata:numsg-odata-service:1.0.0-SNAPSHOT'
+    compile  'com.numsg.odata:numsg-odata-service:1.0.0-SNAPSHOT'
     ```
     2. 在不向暴露出来的Entity或字段打标记,将expose属性设置为false
     ```
@@ -128,7 +128,7 @@ http://localhost:8080/OdataService.svc/Peoples?$filter=gender eq 'MAIL'&$top=2
 
 1. 在spring-boot种子工程API子工程及service子工程中添加numsg-odata-service服务jar包引用
 ```java
-compile  'com.gsafety.odata:numsg-odata-service:1.0.0-SNAPSHOT'
+compile  'com.numsg.odata:numsg-odata-service:1.0.0-SNAPSHOT'
 ```
 
 2. 在sg-entity工程中定义不需要暴露的实体或字段
