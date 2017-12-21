@@ -111,12 +111,6 @@ public class NumsgEntityUtil {
      * we need the EdmEntitySet for the navigation property "Products"
      *
      * This is defined as follows in the metadata:
-     * <code>
-     *
-     * <EntitySet Name="Categories" EntityType="OData.Demo.Category">
-     * <NavigationPropertyBinding Path="Products" Target="Products"/>
-     * </EntitySet>
-     * </code>
      * The "Target" attribute specifies the target EntitySet
      * Therefore we need the startEntitySet "Categories" in order to retrieve the target EntitySet "Products"
      */

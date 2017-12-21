@@ -216,4 +216,6 @@ public class OlingoApplication {
    http://localhost:8080/OdataService.svc/Peoples?$filter=gender eq 0
    
    http://localhost:8080/OdataService.svc/Peoples('002')/Driver
+   
+   https://issues.sonatype.org/browse/OSSRH-36631
 ```

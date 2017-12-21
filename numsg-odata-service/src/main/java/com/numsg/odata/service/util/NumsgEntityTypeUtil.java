@@ -17,7 +17,7 @@ import java.util.UUID;
  */
 public class NumsgEntityTypeUtil {
     /*
-     * 获取主键
+     *  获取主键
       */
     public static String getId(EntityType entityType) throws ODataException {
         try
@@ -29,7 +29,7 @@ public class NumsgEntityTypeUtil {
     }
 
     /*
-    * 根据entityFullTypeName 获取EntityType
+    *  根据entityFullTypeName 获取EntityType
     * */
     public static EntityType getEntityTypeByEntityFullTypeName(Metamodel metamodel, String entityFullTypeName) throws ODataException {
         for (EntityType entityType : metamodel.getEntities()){
@@ -41,7 +41,7 @@ public class NumsgEntityTypeUtil {
     }
 
     /*
-    * 获取EdmType
+    *  获取EdmType
     * */
     public static EdmPrimitiveTypeKind getEdmType(final Class<?> type) {
         if (type == String.class) {
