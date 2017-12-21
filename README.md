@@ -122,7 +122,7 @@ http://localhost:8080/OdataService.svc/Peoples?$filter=gender eq 'MAIL'&$top=2
 
 ## 3. numsg-odata-service集成
 
-### 3.1 与spring-boot集成
+### 3.1 与spring-boot-seed集成
 
 这里主要描述的是numsg-odata-service与spring-boot-seed工程 [odata-springboot](https://github.com/numsg/spring-boot-seed)集成
 
