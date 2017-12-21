@@ -11,13 +11,13 @@ numsg-odata-service针对sg-odata([sg-odata是什么?](https://github.com/numsg/
 ### 2.1 规范调整点如下
 
 1. 工程存放目录移动到 https://github.com/numsg/numsg-odata
-2. 包信息调整
+2. 包信息调整,[详见](http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22com.numsg%22)
 
 ```java
 <dependency>
-  <groupId>com.numsg.odata</groupId>
+  <groupId>com.numsg</groupId>
   <artifactId>numsg-odata-service</artifactId>
-  <version>1.0.0-SNAPSHOT</version>
+  <version>0.0.1</version>
 </dependency>
 ```
 
