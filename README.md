@@ -124,14 +124,14 @@ http://localhost:8080/OdataService.svc/Peoples?$filter=gender eq 'MAIL'&$top=2
 
 ### 3.1 与spring-boot集成
 
-这里主要描述的是numsg-odata-service与spring-boot工程 [odata-springboot](https://github.com/numsg/numsg-odata/tree/master/samples/odata-springboot)集成
+这里主要描述的是numsg-odata-service与spring-boot-seed工程 [odata-springboot](https://github.com/numsg/spring-boot-seed)集成
 
 1. 在spring-boot种子工程API子工程及service子工程中添加numsg-odata-service服务jar包引用
 ```java
-compile  'com.numsg.odata:numsg-odata-service:1.0.0-SNAPSHOT'
+compile  'com.numsg:numsg-odata-service:0.0.1'
 ```
 
-2. 在sg-entity工程中定义不需要暴露的实体或字段
+2. 在spring-boot-seed种子工程service子工程numsg-system1-biz1-service工程中定义不需要暴露的实体或字段
 ```java
 @Entity(name = "CAR")
 @ODataEntity(expose = true)
@@ -144,7 +144,7 @@ public class Car {
 }
 ```
 
-3. 在sg-web工程中添加ODataController,设置好OData对于的RequestMapping
+3. 在spring-boot-seed种子工程numsg-system1-biz1-webapi子工程中添加ODataController,设置好OData对于的RequestMapping
 ```java
 @CrossOrigin(origins = "*")
 @RestController
@@ -153,7 +153,7 @@ public class ODataController extends NumsgODataController {
 }
 ```
 
-4. 在sg-web子工程中添加numsg-odata-service jar包的扫描
+4. 在spring-boot-seed种子工程numsg-system1-backend中添加numsg-odata-service jar包的扫描
 ```java
 @SpringBootApplication
 @EnableWebMvc
